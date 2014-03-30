@@ -25,7 +25,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
  * SETTINGS
  * --------
  * The following variables may be reset in your LocalSettings.php file.
- * 
+ *
  * $wgBlackout['Enable']
  * 			- Enables blackout message
  *			  Default is true
@@ -57,6 +57,7 @@ $wgBlackout = array(
 $dir = dirname(__FILE__) . '/';
 
 $wgAutoloadClasses['Blackout'] = $dir . 'Blackout.body.php';
+$wgMessagesDirs['Blackout'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Blackout'] = $dir . 'Blackout.i18n.php';
 
 $skinDir = $dir . 'skins/';

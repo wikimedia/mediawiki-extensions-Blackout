@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Gregory Varnum"
+        ]
+    },
+    "blackout-desc": "{{desc}}",
+    "blackout-stopsopa-header": "Header used on StopSopa skin",
+    "blackout-stopsopa-message": "Message used on StopSopa skin"
+}
