@@ -1,7 +1,7 @@
 <?php
 
 class SkinStopSopa extends SkinTemplate {
-	var $skinname = 'stopsopa', $stylename = 'stopsopa',
+	public $skinname = 'stopsopa', $stylename = 'stopsopa',
 		$template = 'StopSopaTemplate', $useHeadElement = false;
 }
 

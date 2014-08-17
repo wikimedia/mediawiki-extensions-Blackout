@@ -1,7 +1,7 @@
 <?php
 
 class SkinSopaStrike extends SkinTemplate {
-	var $skinname = 'sopastrike', $stylename = 'sopastrike',
+	public $skinname = 'sopastrike', $stylename = 'sopastrike',
 		$template = 'SopaStrikeTemplate', $useHeadElement = false;
 }
 
