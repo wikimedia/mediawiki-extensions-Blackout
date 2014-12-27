@@ -12,8 +12,8 @@ class StopSopaTemplate extends QuickTemplate {
 	 * to show the actual HTML output
 	 */
 	public function execute() {
-		$header = wfMsgHtml( 'blackout-stopsopa-header' );
-		$message = wfMsgHtml( 'blackout-stopsopa-message' );		
+		$header = wfMessage( 'blackout-stopsopa-header' )->escaped();
+		$message = wfMessage( 'blackout-stopsopa-message' )->escaped();
 		?>
 
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"

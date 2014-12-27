@@ -12,13 +12,13 @@ class ProtestSopaTemplate extends QuickTemplate {
 	 * to show the actual HTML output
 	 */
 	public function execute() {
-		$header = wfMsgHtml( 'blackout-protestsopa-header' );
-		$message1 = wfMsgHtml( 'blackout-protestsopa-message1' );
-		$message2 = wfMsgHtml( 'blackout-protestsopa-message2' );
-		$message3 = wfMsgHtml( 'blackout-protestsopa-message3' );
-		$action = wfMsgHtml( 'blackout-protestsopa-action' );
-		$actionmsg = wfMsgHtml( 'blackout-protestsopa-actionmsg' );
-		$join = wfMsgHtml( 'blackout-protestsopa-join' );
+		$header = wfMessage( 'blackout-protestsopa-header' )->escaped();
+		$message1 = wfMessage( 'blackout-protestsopa-message1' )->escaped();
+		$message2 = wfMessage( 'blackout-protestsopa-message2' )->escaped();
+		$message3 = wfMessage( 'blackout-protestsopa-message3' )->escaped();
+		$action = wfMessage( 'blackout-protestsopa-action' )->escaped();
+		$actionmsg = wfMessage( 'blackout-protestsopa-actionmsg' )->escaped();
+		$join = wfMessage( 'blackout-protestsopa-join' )->escaped();
 		?>
 
 	<html>

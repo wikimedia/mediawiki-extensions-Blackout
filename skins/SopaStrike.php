@@ -12,28 +12,28 @@ class SopaStrikeTemplate extends QuickTemplate {
 	 * to show the actual HTML output
 	 */
 	public function execute() {
-		$title = wfMsgHtml( 'blackout-sopastrike-title' );
-		$ogdesc = wfMsgHtml( 'blackout-sopastrike-ogdesc' );
-		$message1 = wfMsgHtml( 'blackout-sopastrike-message1' );
-		$message2 = wfMsgHtml( 'blackout-sopastrike-message2' );
-		$message3 = wfMsgHtml( 'blackout-sopastrike-message3' );
-		$name = wfMsgHtml( 'allmessagesname' );
-		$email = wfMsgHtml( 'email' );
-		$address = wfMsgHtml( 'blackout-sopastrike-address' );
-		$zipcode = wfMsgHtml( 'blackout-sopastrike-zipcode' );
-		$action = wfMsgHtml( 'blackout-sopastrike-action' );
-		$actionmsg1 = wfMsgHtml( 'blackout-sopastrike-actionmsg1' );
-		$actionmsg2 = wfMsgHtml( 'blackout-sopastrike-actionmsg2' );
-		$join = wfMsgHtml( 'blackout-sopastrike-join' );
-		$add = wfMsgHtml( 'blackout-sopastrike-add' );
-		$learn = wfMsgHtml( 'blackout-sopastrike-learn' );
-		$video = wfMsgHtml( 'blackout-sopastrike-video' );
-		$orgpage = wfMsgHtml( 'blackout-sopastrike-orgpage' );
-		$infographic = wfMsgHtml( 'blackout-sopastrike-infographic' );
-		$ocsopa = wfMsgHtml( 'blackout-sopastrike-ocsopa' );
-		$ocpipa = wfMsgHtml( 'blackout-sopastrike-ocpipa' );
-		$disclaimer = wfMsgHtml( 'blackout-sopastrike-disclaimer' );
-		$privacy = wfMsgHtml( 'blackout-sopastrike-privacy' );
+		$title = wfMessage( 'blackout-sopastrike-title' )->escaped();
+		$ogdesc = wfMessage( 'blackout-sopastrike-ogdesc' )->escaped();
+		$message1 = wfMessage( 'blackout-sopastrike-message1' )->escaped();
+		$message2 = wfMessage( 'blackout-sopastrike-message2' )->escaped();
+		$message3 = wfMessage( 'blackout-sopastrike-message3' )->escaped();
+		$name = wfMessage( 'allmessagesname' )->escaped();
+		$email = wfMessage( 'email' )->escaped();
+		$address = wfMessage( 'blackout-sopastrike-address' )->escaped();
+		$zipcode = wfMessage( 'blackout-sopastrike-zipcode' )->escaped();
+		$action = wfMessage( 'blackout-sopastrike-action' )->escaped();
+		$actionmsg1 = wfMessage( 'blackout-sopastrike-actionmsg1' )->escaped();
+		$actionmsg2 = wfMessage( 'blackout-sopastrike-actionmsg2' )->escaped();
+		$join = wfMessage( 'blackout-sopastrike-join' )->escaped();
+		$add = wfMessage( 'blackout-sopastrike-add' )->escaped();
+		$learn = wfMessage( 'blackout-sopastrike-learn' )->escaped();
+		$video = wfMessage( 'blackout-sopastrike-video' )->escaped();
+		$orgpage = wfMessage( 'blackout-sopastrike-orgpage' )->escaped();
+		$infographic = wfMessage( 'blackout-sopastrike-infographic' )->escaped();
+		$ocsopa = wfMessage( 'blackout-sopastrike-ocsopa' )->escaped();
+		$ocpipa = wfMessage( 'blackout-sopastrike-ocpipa' )->escaped();
+		$disclaimer = wfMessage( 'blackout-sopastrike-disclaimer' )->escaped();
+		$privacy = wfMessage( 'blackout-sopastrike-privacy' )->escaped();
 		?>
 
 	<!DOCTYPE html>

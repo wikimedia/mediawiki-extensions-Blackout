@@ -64,6 +64,9 @@ $skinDir = $dir . 'skins/';
 $wgAutoloadClasses['SkinProtestSopa'] = $skinDir . 'ProtestSopa.php';
 $wgAutoloadClasses['SkinStopSopa'] = $skinDir . 'StopSopa.php';
 $wgAutoloadClasses['SkinSopaStrike'] = $skinDir . 'SopaStrike.php';
+$wgAutoloadClasses['ProtestSopaTemplate'] = $skinDir . 'ProtestSopa.php';
+$wgAutoloadClasses['StopSopaTemplate'] = $skinDir . 'StopSopa.php';
+$wgAutoloadClasses['SopaStrikeTemplate'] = $skinDir . 'SopaStrike.php';
 
 /*
  * Credits
