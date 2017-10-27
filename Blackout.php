@@ -9,7 +9,6 @@
  * @license GPL
  *
  * Thank you to *** for feedback, bug reporting and cleaning up code
- * Thank you to Raymond and others mentioned in TweetANew.i18n.php for translation work
  *
  */
 
@@ -58,7 +57,6 @@ $dir = dirname(__FILE__) . '/';
 
 $wgAutoloadClasses['Blackout'] = $dir . 'Blackout.body.php';
 $wgMessagesDirs['Blackout'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['Blackout'] = $dir . 'Blackout.i18n.php';
 
 $skinDir = $dir . 'skins/';
 $wgAutoloadClasses['SkinProtestSopa'] = $skinDir . 'ProtestSopa.php';
