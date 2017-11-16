@@ -5,79 +5,23 @@
  * https://www.mediawiki.org/wiki/Extension:Blackout
  *
  * @addtogroup Extensions
- * @author John Du Hart and Gregory Varnum utilizing work by jorm and MediaWiki developers for the Wikimedia Foundation's SOPA/PIPA protest
+ * @author John Du Hart and Gregory Varnum utilizing work by jorm and MediaWiki developers for the
+ * Wikimedia Foundation's SOPA/PIPA protest
  * @license GPL
  *
- * Thank you to *** for feedback, bug reporting and cleaning up code
+ * Thank you for feedback, bug reporting and cleaning up code
  *
  */
-
-/**
- * Exit if called outside of MediaWiki
- */
-if( !defined( 'MEDIAWIKI' ) ) {
-	echo( "This file is an extension to the MediaWiki software and cannot be used standalone.\n" );
-	die( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'Blackout' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['Blackout'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for the Blackout extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the Blackout extension requires MediaWiki 1.29+' );
 }
-
-/**
- * SETTINGS
- * --------
- * The following variables may be reset in your LocalSettings.php file.
- *
- * $wgBlackout['Enable']
- * 			- Enables blackout message
- *			  Default is true
- *
- * $wgBlackout['Skin']
- * 			- Change the blackout skin
- * 				* ProtestSopa (Default)
- * 				* SopaStrike
- * 				* StopSopa
- *
- * $wgBlackout['Whitelist'][]
- * 			- Add pages to the whitelist
- *
- */
-
-$wgBlackout = array(
-	'Enable' => true,
-	'Skin' => 'ProtestSopa',
-	'Whitelist' => array(
-		'Special:Version',
-	),
-);
-
-/**
- * Class and localisation
- *
- */
-
-$dir = dirname(__FILE__) . '/';
-
-$wgAutoloadClasses['Blackout'] = $dir . 'Blackout.body.php';
-$wgMessagesDirs['Blackout'] = __DIR__ . '/i18n';
-
-$skinDir = $dir . 'skins/';
-$wgAutoloadClasses['SkinProtestSopa'] = $skinDir . 'ProtestSopa.php';
-$wgAutoloadClasses['SkinStopSopa'] = $skinDir . 'StopSopa.php';
-$wgAutoloadClasses['SkinSopaStrike'] = $skinDir . 'SopaStrike.php';
-$wgAutoloadClasses['ProtestSopaTemplate'] = $skinDir . 'ProtestSopa.php';
-$wgAutoloadClasses['StopSopaTemplate'] = $skinDir . 'StopSopa.php';
-$wgAutoloadClasses['SopaStrikeTemplate'] = $skinDir . 'SopaStrike.php';
-
-/*
- * Credits
- */
-$wgExtensionCredits['other'][] = array(
-	'name'           => 'Blackout',
-	'version'        => '1.0.20120118',
-	'author'         => array('[https://www.mediawiki.org/wiki/User:Johnduhart John Du Hart]', '[https://www.mediawiki.org/wiki/User:Varnent Gregory Varnum]', '...'),
-	'descriptionmsg' => 'blackout-desc',
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:Blackout',
-);
-
-/*
- * Hooks
- */
-$wgHooks['MediaWikiPerformAction'][] = 'Blackout::overrideAction';
