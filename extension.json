@@ -7,7 +7,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:Blackout",
 	"descriptionmsg": "blackout-desc",
-	"license-name": "GPL-1.0+",
+	"license-name": "GPL-1.0-or-later",
 	"type": "other",
 	"MessagesDirs": {
 		"Blackout": [
