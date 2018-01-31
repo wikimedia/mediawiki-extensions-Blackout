@@ -31,11 +31,10 @@ class SkinSopaStrike extends Skin {
 		$disclaimer = wfMessage( 'blackout-sopastrike-disclaimer' )->escaped();
 		$privacy = wfMessage( 'blackout-sopastrike-privacy' )->escaped();
 		?>
-
 	<!DOCTYPE html>
-	<html>
+	<html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta charset="utf-8">
 		<title><?php echo $title ?></title>
 		<meta property="og:title" content="<?php echo $title ?>">
 		<meta property="og:description" content="<?php echo $ogdesc ?>">
@@ -80,7 +79,6 @@ class SkinSopaStrike extends Skin {
 	</div>
 	</body>
 	</html>
-
 	<?php
 	}
 }

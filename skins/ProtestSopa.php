@@ -16,12 +16,13 @@ class SkinProtestSopa extends Skin {
 		$actionmsg = wfMessage( 'blackout-protestsopa-actionmsg' )->escaped();
 		$join = wfMessage( 'blackout-protestsopa-join' )->escaped();
 		?>
-
+	<!DOCTYPE html>
 	<html>
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
-       	<title><?php echo $header ?></title>
+		<meta charset="utf-8">
+		<link href="http://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet">
+		<title><?php echo $header ?></title>
 		<style>
 			body {
 				color: #fff;
@@ -100,7 +101,6 @@ class SkinProtestSopa extends Skin {
 		<div>
 	</body>
 	</html>
-
 		<?php
 	}
 }
