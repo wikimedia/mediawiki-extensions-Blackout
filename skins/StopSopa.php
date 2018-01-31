@@ -1,17 +1,13 @@
 <?php
 
 class SkinStopSopa extends SkinTemplate {
-	public $skinname = 'stopsopa', $stylename = 'stopsopa',
-		$template = 'StopSopaTemplate', $useHeadElement = false;
-}
+	public $skinname = 'stopsopa';
 
-class StopSopaTemplate extends QuickTemplate {
+	public function setupSkinUserCss( OutputPage $out ) {
+		// Nothing.
+	}
 
-	/**
-	 * Main function, used by classes that subclass QuickTemplate
-	 * to show the actual HTML output
-	 */
-	public function execute() {
+	public function outputPage( OutputPage $out = null ) {
 		$header = wfMessage( 'blackout-stopsopa-header' )->escaped();
 		$message = wfMessage( 'blackout-stopsopa-message' )->escaped();
 		?>

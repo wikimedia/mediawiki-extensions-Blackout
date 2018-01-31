@@ -1,17 +1,13 @@
 <?php
 
-class SkinSopaStrike extends SkinTemplate {
-	public $skinname = 'sopastrike', $stylename = 'sopastrike',
-		$template = 'SopaStrikeTemplate', $useHeadElement = false;
-}
+class SkinSopaStrike extends Skin {
+	public $skinname = 'sopastrike';
 
-class SopaStrikeTemplate extends QuickTemplate {
+	public function setupSkinUserCss( OutputPage $out ) {
+		// Nothing.
+	}
 
-	/**
-	 * Main function, used by classes that subclass QuickTemplate
-	 * to show the actual HTML output
-	 */
-	public function execute() {
+	public function outputPage( OutputPage $out = null ) {
 		$title = wfMessage( 'blackout-sopastrike-title' )->escaped();
 		$ogdesc = wfMessage( 'blackout-sopastrike-ogdesc' )->escaped();
 		$message1 = wfMessage( 'blackout-sopastrike-message1' )->escaped();

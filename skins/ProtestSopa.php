@@ -1,17 +1,13 @@
 <?php
 
-class SkinProtestSopa extends SkinTemplate {
-	public $skinname = 'protestsopa', $stylename = 'protestsopa',
-		$template = 'ProtestSopaTemplate', $useHeadElement = false;
-}
+class SkinProtestSopa extends Skin {
+	public $skinname = 'protestsopa';
 
-class ProtestSopaTemplate extends QuickTemplate {
+	public function setupSkinUserCss( OutputPage $out ) {
+		// Nothing.
+	}
 
-	/**
-	 * Main function, used by classes that subclass QuickTemplate
-	 * to show the actual HTML output
-	 */
-	public function execute() {
+	public function outputPage( OutputPage $out = null ) {
 		$header = wfMessage( 'blackout-protestsopa-header' )->escaped();
 		$message1 = wfMessage( 'blackout-protestsopa-message1' )->escaped();
 		$message2 = wfMessage( 'blackout-protestsopa-message2' )->escaped();

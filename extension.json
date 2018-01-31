@@ -21,10 +21,7 @@
 		"Blackout": "Blackout.body.php",
 		"SkinProtestSopa": "skins/ProtestSopa.php",
 		"SkinStopSopa": "skins/StopSopa.php",
-		"SkinSopaStrike": "skins/SopaStrike.php",
-		"ProtestSopaTemplate": "skins/ProtestSopa.php",
-		"StopSopaTemplate": "skins/StopSopa.php",
-		"SopaStrikeTemplate": "skins/SopaStrike.php"
+		"SkinSopaStrike": "skins/SopaStrike.php"
 	},
 	"Hooks": {
 		"MediaWikiPerformAction": "Blackout::overrideAction"
