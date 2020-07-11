@@ -24,12 +24,12 @@ class Blackout {
 	/**
 	 * Override action hook. This is the show-stopper
 	 *
-	 * @param $output OutputPage
-	 * @param $article Article
-	 * @param $title Title
-	 * @param $user User
-	 * @param $request WebRequest
-	 * @param $wiki MediaWiki
+	 * @param OutputPage $output
+	 * @param Article $article
+	 * @param Title $title
+	 * @param User $user
+	 * @param WebRequest $request
+	 * @param MediaWiki $wiki
 	 * @return bool
 	 */
 	public static function overrideAction( $output, $article, $title, $user, $request, $wiki ) {
