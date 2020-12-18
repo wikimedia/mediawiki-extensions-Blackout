@@ -3,10 +3,6 @@
 class SkinSopaStrike extends Skin {
 	public $skinname = 'sopastrike';
 
-	public function setupSkinUserCss( OutputPage $out ) {
-		// Nothing.
-	}
-
 	public function outputPage( OutputPage $out = null ) {
 		$title = wfMessage( 'blackout-sopastrike-title' )->escaped();
 		$ogdesc = wfMessage( 'blackout-sopastrike-ogdesc' )->escaped();

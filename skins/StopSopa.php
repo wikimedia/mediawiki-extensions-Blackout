@@ -3,10 +3,6 @@
 class SkinStopSopa extends SkinTemplate {
 	public $skinname = 'stopsopa';
 
-	public function setupSkinUserCss( OutputPage $out ) {
-		// Nothing.
-	}
-
 	public function outputPage( OutputPage $out = null ) {
 		$header = wfMessage( 'blackout-stopsopa-header' )->escaped();
 		$message = wfMessage( 'blackout-stopsopa-message' )->escaped();

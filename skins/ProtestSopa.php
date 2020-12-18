@@ -3,10 +3,6 @@
 class SkinProtestSopa extends Skin {
 	public $skinname = 'protestsopa';
 
-	public function setupSkinUserCss( OutputPage $out ) {
-		// Nothing.
-	}
-
 	public function outputPage( OutputPage $out = null ) {
 		$header = wfMessage( 'blackout-protestsopa-header' )->escaped();
 		$message1 = wfMessage( 'blackout-protestsopa-message1' )->escaped();
